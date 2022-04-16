@@ -1,8 +1,10 @@
 
 public class IR {
 
-	double salarioMenosINSS;
-	int qtdDependentes;
+	private double salarioMenosINSS;
+	private int qtdDependentes;
+	private double outrosDescontos;
+
 
 	double valorDependente = 189.59;
 	private final double[] aliquota = { 0.075, 0.15, 0.225, 0.275 };
