@@ -14,6 +14,8 @@ public class IR {
 		this.qtdDependentes = qtdDependentes;
 	}
 
+	public IR(){}
+
 	double calculoIR() {
 		salarioMenosINSS -= (valorDependente * qtdDependentes);
 		if (salarioMenosINSS <= 1900) {
