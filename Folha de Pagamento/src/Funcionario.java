@@ -3,6 +3,9 @@ public class Funcionario {
 	private double salarioBruto;
 	private int tipo;
 	private int qtdDependentes;
+	private double outrosDescontos;
+	private double pensaoAlimenticia;
+	private double double previdenciaSocial;
 
 	public Funcionario(double salarioBruto, int tipo, int qtdDependentes) {
 		super();
@@ -27,12 +30,17 @@ public class Funcionario {
 	}
 
 	public double obterContribuicaoIR(double salarioMenosINSS) {
-		IR funcionarioIR = new IR(salarioMenosINSS, qtdDependentes);
+		IR funcionarioIR = new IR(salarioMenosINSS, qtdDependentes, outrosDescontos, pensaoAlimenticia, previdenciaSocial);
 		return funcionarioIR.calculoIR();
 	}
 
 	public double calcularSalarioLiquido(double FGTS, double INSS, double IR) {
 		return salarioBruto - FGTS - INSS - IR;
+	}
+
+	public double enviarDados(){
+
+
 	}
 
 }
