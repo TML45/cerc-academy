@@ -18,7 +18,6 @@ public class IR {
 	private final double[] aliquota = { 0.075, 0.15, 0.225, 0.275 };
 	private final double[] deducao = { 142.80, 354.80, 636.13, 869.36 };
 
-
 	double calculoIR(double salario, int qtdDependentes, double outrosDescontos,
 					 double pensaoAlimenticia, double previdenciaSocial){
 
